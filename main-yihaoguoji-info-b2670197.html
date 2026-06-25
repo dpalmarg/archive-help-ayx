@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>壹号国际 · 娓娓道来</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            background: #fafaf9;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        /* 开篇 · 短句 */
+        .opening {
+            margin-top: 3.2rem;
+            margin-bottom: 2.8rem;
+            font-size: 2rem;
+            font-weight: 350;
+            letter-spacing: 0.01em;
+            color: #2b2b2b;
+            line-height: 1.3;
+            border-left: 3px solid #c0a882;
+            padding-left: 1.2rem;
+        }
+
+        .opening span {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #6f6f6f;
+            margin-top: 0.5rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* 承接段落 */
+        .intro p {
+            margin-bottom: 1.45rem;
+            font-size: 1.05rem;
+            color: #2c2c2c;
+            text-align: left;
+        }
+
+        .intro a {
+            color: #3f5a36;
+            text-decoration: none;
+            border-bottom: 1px solid #bccbb5;
+            transition: border-color 0.2s ease, color 0.2s;
+        }
+
+        .intro a:hover {
+            border-bottom-color: #3f5a36;
+            color: #1f3a1a;
+        }
+
+        /* 特点列表 —— 温和卡片 */
+        .features {
+            margin: 3rem 0 2.2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.2rem 1.6rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 6px 12px -6px rgba(0,0,0,0.04);
+            border: 1px solid #efedea;
+            transition: background 0.2s;
+        }
+
+        .feature-item:hover {
+            background: #f6f4f1;
+        }
+
+        .feature-item strong {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #2b4a2b;
+            margin-bottom: 0.2rem;
+            letter-spacing: 0.02em;
+        }
+
+        .feature-item .desc {
+            font-size: 0.97rem;
+            color: #4a4a4a;
+            line-height: 1.5;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2ddd6;
+            font-size: 1rem;
+            color: #3e3e3e;
+            text-align: left;
+        }
+
+        .closing p {
+            margin-bottom: 0.8rem;
+        }
+
+        .closing small {
+            display: block;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #8c8c8c;
+            letter-spacing: 0.02em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 500px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .opening {
+                font-size: 1.6rem;
+                padding-left: 0.9rem;
+            }
+            .feature-item {
+                padding: 1rem 1.2rem;
+            }
+            .intro p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- 开场短句 -->
+        <div class="opening">
+            一段安稳的入口<br>
+            不必喧哗，自有去向。
+            <span>—— 壹号国际 · 页面侧记</span>
+        </div>
+
+        <!-- 承接段落：从稳定入口和页面说明切入 -->
+        <div class="intro">
+            <p>
+                网站是许多故事的起点。一个足够清晰的入口，就像一本翻开的书页首行——
+                没有多余的声响，却让人愿意驻足。这里所呈现的，是
+                <a href="https://main-yihaoguoji.com">壹号国际</a>
+                在数字世界的一处安静窗口。它不急于罗列全部，而是先提供一个可以放心站定的地方。
+            </p>
+            <p>
+                页面本身即是说明。没有弹窗催促，没有横幅闪烁；结构平铺，文字克制。
+                我们希望每一位来访者，都能在简净的版式中找到自己需要的线索，
+                就像走过一间光线柔和的走廊，两侧的门扉都虚掩着，等你决定何时推开。
+            </p>
+        </div>
+
+        <!-- 特点列表（温和非推销） -->
+        <div class="features">
+            <div class="feature-item">
+                <strong>轻量入口</strong>
+                <div class="desc">页面加载迅速，信息层级一目了然。无论使用手机还是桌面，都能在几秒内建立方位感。</div>
+            </div>
+            <div class="feature-item">
+                <strong>克制的指引</strong>
+                <div class="desc">没有冗余的跳转链，主要路径清晰可循。每一条链接都经过考量，避免让读者陷入选择疲劳。</div>
+            </div>
+            <div class="feature-item">
+                <strong>留白的呼吸感</strong>
+                <div class="desc">文字与区块之间留有适度的间距，让视线自然流动。不追求视觉密度，而是为内容留出被理解的空间。</div>
+            </div>
+            <div class="feature-item">
+                <strong>延续的基调</strong>
+                <div class="desc">从首页到内页，配色、字距与语气保持一致。这种延续本身就是一种无声的说明：这里值得信任。</div>
+            </div>
+        </div>
+
+        <!-- 温和结尾 + 自然嵌入链接 -->
+        <div class="closing">
+            <p>
+                如果你愿意慢慢浏览，会发现每个页面都在用自己的方式回应同一个问题：
+                如何让一个网站既成为入口，又成为目的地。
+                <a href="https://main-yihaoguoji.com">壹号国际</a>
+                的尝试是温和的——它不定义你的路径，只提供值得停留的角落。
+            </p>
+            <p>
+                页面之外，还有更多未曾展开的部分。但一个好的开始，往往不需要把话说完。
+                留一些余味，等你自己来续。
+            </p>
+            <small>
+                页面叙述 · 壹号国际 · 入口即说明
+            </small>
+        </div>
+
+    </div>
+</body>
+</html>
